@@ -1,0 +1,198 @@
+.work {
+    display: flex;
+    padding: 0.5rem 3.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3rem;
+    height: 70vh;
+    font-family: "Space Grotesk",
+        sans-serif;
+}
+
+.work>.color>h1{
+ color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.work>.color>h1 span {
+    color: var(--brown);
+    margin-top: -4rem;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.w-button {
+    width: 14rem;
+    height: 4rem;
+    padding: 1rem .5rem;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 16px;
+    background: #1b130a !important;
+}
+p{
+    color: var(--gray);
+    line-height: 2rem;
+    margin: 2rem 0;
+    font-size: 18px;
+}
+.w-button:hover {
+background: none !important;
+}
+/* right side*/
+.w-right {
+    position: relative;
+    left: 3rem;
+}
+.w-mainCircle {
+    left: 9rem;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    background: #fff;
+    top: 2rem;
+}
+.w-mainCircle>*{
+    position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+    top: 20.5rem;
+    left: 8.1rem;
+}
+.w-mainCircle> :nth-child(2) {
+    top: -5rem;
+    left: 6rem;
+}
+.w-mainCircle > :nth-child(3) {
+    top: 7.5rem;
+    left: -4.5rem;
+}
+.w-mainCircle > :nth-child(4) {
+    top: 7rem;
+    left: 20rem;
+}
+.w-mainCircle > :nth-child(5) {
+    top: 8rem;
+    left: 8rem;
+}
+.w-secCircle {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #f2f4ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    box-shadow: var(--smboxShadowii);
+    background: #fff;
+}
+.w-secCircle > img {
+    transform: scale(0.6);
+    border-radius: 100%;
+    width: 6.8rem;
+    height: 6.8rem;
+}
+.w-backCircle {
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.pinkCircle {
+    background: var(--brown);
+    left: 21rem;
+    top: 0rem;
+}
+.brownCircle{
+    background: #f2f4ef;
+    left: 22rem;
+    top: 8rem;
+}
+
+[data-aos="example-anim3"] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;}
+
+    .aos-animate {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+
+/* Media querie */
+
+@media (max-width: 669px) {
+    .work {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .work>.color>h1 {
+  font-size: 2rem;
+                }
+.work>.color>h1 span {
+
+    font-size: 3rem;
+}
+    .w-right {
+        top: 3rem;
+        left: -5rem;
+      }
+
+        .w-mainCircle {
+            left: 9rem;
+            position: relative;
+            width: 17rem;
+            height: 17rem;
+            top: 7rem;
+        }
+                .w-mainCircle> :nth-child(1) { /*eye-shadow*/
+                    top: 14.5rem;
+                    left: 5.1rem;
+                }
+
+                .w-mainCircle> :nth-child(2) { /*beauty*/
+                    top: -5rem;
+                    left: 6rem;
+                }
+
+                .w-mainCircle> :nth-child(3) { /*bottle*/
+                    top: 4.5rem;
+                    left: -5.5rem;
+                }
+
+                .w-mainCircle> :nth-child(4) { /*brush*/
+                    top: 5rem;
+                    left: 15rem;
+                }
+
+                .w-mainCircle> :nth-child(5) { /*lipstick*/
+                    top: 5rem;
+                    left: 5rem;
+                }
+
+                .w-secCircle {
+                width: 7.5rem;
+                height: 7.5rem;
+            }
+                        .w-backCircle {
+                            height: 13.5rem;
+                            width: 13.5rem;
+                        }
+
+                                        .pinkCircle {
+                                            left: 16.5rem;
+                                            top: 7rem;
+                                        }
+
+                                        .brownCircle {
+                                            left: 16rem;
+                                            top: 12rem;
+                                        }
+
+}

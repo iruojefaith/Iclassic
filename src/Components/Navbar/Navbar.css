@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-wrapper {
+    height: 10vh;
+    font-family: "Space Grotesk",
+            sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding:  2rem 5rem 0 5rem;
+    background-color: rgb(255, 255, 255, .9);
+    z-index: 1;
+    position: fixed;
+}
+
+.n-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+ul {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+.nav-home,
+.nav-services,
+.nav-experience,
+.nav-portfolio,
+.nav-testimonial {
+        font-weight: 400;
+        padding: 0 20px;
+        margin: 0 10px;
+        height: 100%;
+        display: flex;
+        cursor: pointer;
+        color: black;
+
+}
+
+.nav-home:hover,
+.nav-services:hover,
+.nav-experience:hover,
+.nav-portfolio:hover,
+.nav-testimonial:hover {
+    cursor: pointer;
+    color: var(--brown);
+    letter-spacing: 2px;
+    transition: ease-out 2s;
+}
+.n-button{
+    flex: 2;
+}
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .n-name{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        background-color: #fff;
+        z-index: 1;
+        display: block;
+        text-align: center !important;
+        list-style: none;
+        top: 55px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+        .nav-home,
+        .nav-services,
+        .nav-experience,
+        .nav-portfolio,
+        .nav-testimonial {
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+        .mobile-menu-icon{
+            display: block;
+            position: absolute;
+            color: var(--brown);
+            border: none;
+            outline: none;
+            font-size: 30px;
+            top: -15px;
+            right: 25px;
+        }
+}

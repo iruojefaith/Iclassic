@@ -1,0 +1,61 @@
+.footer {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+section .footer-content {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+width: 100%;
+padding: 1rem 4rem;
+    align-items: center;
+}
+
+
+
+.f-content span{
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 24px;
+    margin-left: 0;
+}
+
+ .footer-link,
+ .footer-account {
+     display: block;
+    list-style: none;
+    line-height: 30px;
+}
+ .footer-link h3 {
+    color: var(--brown);
+}
+
+.copy-right {
+    border-top: 1px solid rgb(27, 19, 10, .6);
+    width: 100%;
+    padding: 1.5rem 4rem;
+    margin-top: 1rem;
+
+}
+.copy-right span{
+    display: flex;
+    justify-content: center;
+     color: var(--brown);
+    text-align: center;
+}
+.emptydiv{
+    border-top:1px solid rgba(144, 112, 81, 0.6);
+    width: 100%;
+}
+@media (max-width: 669px) {
+section .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+}
+
+

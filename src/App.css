@@ -1,0 +1,122 @@
+:root {
+  --lightbrown: #99725f;
+  /*#a47148*/
+  /* --brown: rgb(121, 90, 73); */
+  --brown: #A7633C;
+  --brownn: #D23779;
+  --black: #251910;
+  --white: #f3f6f2;
+  --gray: #746b68;
+  /*bcb8b1*/
+  --purple: rgb(255, 210, 246);
+  --boxShadow: 0px 7px 25px rgb(0 0 0 / 0.08);
+  --boxShadowii: 0 10px 30px rgba(0 0 0 / 4%);
+  --orangeCard: rgba(245, 236, 231, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --blur: rgb(252, 237, 242);
+  --font-color: #1b130a;
+  /*A57562 #5A4133*/
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: 10px;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 15px 5px;
+  display: block;
+  margin: 15px 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* Button 6 */
+.btn-6 {
+  color: #fff;
+  background: #371C0E
+  ;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.btn-6:active {
+  top: 2px;
+}
+
+/* Button 6g */
+.btn-6g {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.btn-6g span {
+  transition: all 0.3s;
+}
+
+.btn-6g::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+
+.btn-6g:hover span {
+  letter-spacing: 2px;
+}
+
+.btn-6g:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-6g::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-6g:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
